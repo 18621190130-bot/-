@@ -6,6 +6,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 # 1. 读取数据
 # =========================
 df = pd.read_excel("books_dataset.xlsx")
+df = df.astype(str)
+
+# ✅ 再防空值
+df = df.fillna("")
 
 # =========================
 # 2. 构造文本信息（很关键！）
