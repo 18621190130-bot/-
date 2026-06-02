@@ -16,7 +16,7 @@ df["text"] = df["书名"] + " " + df["所属类别"] + " " + df["书本简介（
 # =========================
 # 3. 加载模型（第一次会稍慢）
 # =========================
-model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
 
 # =========================
 # 4. 预计算图书向量（只做一次）
